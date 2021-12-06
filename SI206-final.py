@@ -4,7 +4,7 @@ import json
 from bs4 import BeautifulSoup
 import requests
 import os
-
+#Names: Zack, Toby, Luke
 
 def getStatesWithTeams():
     requestURL = "https://worldpopulationreview.com/state-rankings/nba-teams-by-state"
