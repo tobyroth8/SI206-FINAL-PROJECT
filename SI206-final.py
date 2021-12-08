@@ -18,7 +18,7 @@ def getStatesWithTeams():
             master.append(variable.text)
     print(master)
 
-def getNBATeams():
+def getUSNBATeams():
     requestURL = "https://www.cbssports.com/nba/teams/"
     master = []
     resp = requests.get(requestURL)
@@ -28,7 +28,8 @@ def getNBATeams():
         x = team.find_all('a')
         for variable in x:
             master.append(variable.text)
+    master.pop(4)
     print(master)
 
 getStatesWithTeams()
-getNBATeams()
+getUSNBATeams()
